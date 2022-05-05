@@ -6,42 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"/>
     <link rel="stylesheet" href="./css/styles.css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>goit-markup-hw-01</title>
   </head>
   <body class="body">
     <!--header-box-->
-    <header>
+    <div class="container">
+      <header class="header-box">
       <a class="logo" href="">Web<span class="logo-text">Studio</span></a>
       <nav>
-        <ul class="site-navigation">
-          <li><a class="nav-link-current" href="" >студия</a></li>
-          <li><a class="nav-link" href="./portfolio.html" >портфолио</a></li>
-          <li><a class="nav-link" href="" >контакты</a></li>
+        <ul class="site-links-container">
+          <li class="links-box"><a class="nav-link-current" href="" >студия</a></li>
+          <li class="links-box"><a class="nav-link" href="./portfolio.html" >портфолио</a></li>
+          <li class="links-box"><a class="nav-link" href="" >контакты</a></li>
         </ul>
       </nav>
-      <ul>
+      <ul class="site-links-container">
         <li>
-          <a href="mailto:info@devstudio.com" class="filter-mail"
+          <a class="filter-mail" href="mailto:info@devstudio.com" 
             >info@devstudio.com</a>
         </li>
-        <li>
-          <a href="tel:+380961111111" class="filter-phone">+38 096 111 11 11</a>
+        <li class="box-filter-phone">
+          <a class="filter-phone" href="tel:+380961111111" >+38 096 111 11 11</a>
         </li>
       </ul>
     </header>
+    </div>
 
     <!--main-box-->
 
     <main>
-      <section class="hero">
-        <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
+      <div class="container">
+        <section class="hero">
+        <h1 class="hero-text">Эффективные решения <br> для вашего бизнеса</h1>
         <button class="btn-hero" type="button">Заказать услугу</button>
       </section>
+      </div>
 
+
+      <div class="container">
       <section>
         <!--<h2>Наши особенности</h2>-->
         <ul>
@@ -75,7 +84,11 @@
           </li>
         </ul>
       </section>
+      </div>
+
+
       <!--работы команды-->
+      <div class="container">
       <section>
         <h2 class="specification">Чем мы занимаемся</h2>
         <ul>
@@ -105,7 +118,9 @@
           </li>
         </ul>
       </section>
+      </div>
       <!--наша команда-->
+      <div class="container">
       <section class="team">
         <h2 class="specification">Наша команда</h2>
         <ul>
@@ -131,10 +146,11 @@
           </li>
         </ul>
       </section>
+      </div>
     </main>
 
     <!--подвал страницы-->
-
+<div class="container">
     <footer class="footer-bg">
       <a class="logo" href="">Web<span class="logo-text-footer">Studio</span></a>
       <address class="address">
@@ -151,5 +167,6 @@
         </ul>
       </address>
     </footer>
+    </div>
   </body>
 </html>

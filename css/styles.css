@@ -1,16 +1,24 @@
 :root {
---color-text: #757575;
---color-h2-h3:  #212121; 
---color-hover: #2196f3;
---link-color: #212121;
---studio-color: black;
---hero-text-color: #ffffff;
---background-team-color: #f5f4fa;
---background-footer: #2f303a;
---footer-studio: white;
---futer-contacts: #ffffff99;
+  --color-text: #757575;
+  --color-h2-h3: #212121;
+  --color-hover: #2196f3;
+  --link-color: #212121;
+  --studio-color: black;
+  --hero-text-color: #ffffff;
+  --background-team-color: #f5f4fa;
+  --background-footer: #2f303a;
+  --footer-studio: white;
+  --futer-contacts: #ffffff99;
+}
 
+html {
+  box-sizing: border-box;
+}
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 .body {
@@ -23,57 +31,100 @@
 ul {
   list-style-type: none;
 }
+
 .link-logo,
 .logo {
-text-decoration: none;
+  text-decoration: none;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/*header*/
+
+.header-box {
+  display: flex;
+  text-align: center;
+}
+
 
 /*logo*/
 
-
-
 .logo {
+  margin-left: 215px;
   color: #2196f3;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  font-family: "Raleway";  
+  font-family: "Raleway";
 }
 
 .logo-text {
-  color: black; 
+  color: black;
 }
 
 .logo-text-footer {
-  color: white; 
+  color: white;
 }
 
+
 /*navigation block*/
-  .nav-link-current {   
-    text-decoration: none;
-    font-weight: 500;
-    line-height: 1.14;
-    color: #2196F3;
-    letter-spacing: 0.02em;
-    
-  }
+
+
+
+.nav-link-current {
+ 
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.14;
+  color: #2196f3;
+  letter-spacing: 0.02em;
+  
+}
 
 .nav-link {
   font-weight: 500;
   line-height: 1.14;
   color: #212121;
   text-decoration: none;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02em; 
+  display: block;
+}
 
+.site-links-container { 
+  display: flex;
+  width: 294px;
+  box-sizing: border-box;
+  margin-left: 453px;
+  align-items: center; 
 
 }
 
+.links-box {
+  display: inline-block;
+  margin-right: 50px;
+  text-align: center;
+}
+
+.links-box:last-child {  
+  margin-right: 0;  
+}
+
 .filter-mail {
+  display: flex;
+  text-align: center;
+  margin-left: 1078px;
   font-weight: 500;
   line-height: 1.14;
   color: #757575;
   text-decoration: none;
 }
+
+
 
 .filter-mail:hover,
 .filter-mail:focus,
@@ -87,11 +138,8 @@ text-decoration: none;
 .nav-link-current:focus,
 .nav-link:hover,
 nav-link:focus {
-  color:#2196f3;
+  color: #2196f3;
 }
-
-
-
 
 .btn {
   background-color: var(--background-team-color);
@@ -101,42 +149,61 @@ nav-link:focus {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center; 
+  text-align: center;
   border-radius: 4px;
   overflow: auto;
 }
 
 .btn:focus,
 .btn:hover {
-    color: #FFFFFF;
-    background-color: #2196f3;
+  color: #ffffff;
+  background-color: #2196f3;
 }
 
 .filter-phone {
+  margin-left: 1263px;
   font-weight: 500;
   line-height: 16px;
   color: #757575;
   text-decoration: none;
+  
 }
 
 /*hero block*/
 
 .hero {
-   background: #2F303A;
-   text-align: center;
+  background: #2f303a;
+  text-align: center;
+  width: auto;
+  height: auto;
+
 }
 
 .hero-text {
+  height: auto;
+  width: auto;
+  padding-top: 200px;
+  
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+
 }
 
 .btn-hero {
-  background: #2196F3; 
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: #2196f3;
+  margin-top: 30px;
+  margin-bottom: 200px;
+  
 }
 
 /*features block*/
@@ -145,10 +212,10 @@ nav-link:focus {
   color: var(--color-h2-h3);
   font-weight: 700;
   line-height: 1.14;
-  text-transform: uppercase;  
+  text-transform: uppercase;
 }
 
-.our-features-description { 
+.our-features-description {
   line-height: 0.14;
   color: var(--color-text);
 }
@@ -161,7 +228,6 @@ nav-link:focus {
   line-height: 1.16;
   color: var(--color-h2-h3);
   text-align: center;
-  
 }
 
 .team {
@@ -183,7 +249,7 @@ nav-link:focus {
 .specification-team-card {
   line-height: 1.18;
   text-align: center;
-  color: var(--color-text)
+  color: var(--color-text);
 }
 
 /*footer block*/
@@ -225,3 +291,5 @@ nav-link:focus {
   line-height: 1.87;
   color: #757575;
 }
+
+/*boxes*/
