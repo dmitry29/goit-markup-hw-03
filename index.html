@@ -13,20 +13,27 @@
     <link rel="stylesheet" href="./css/styles.css" />
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
     <title>goit-markup-hw-01</title>
+
   </head>
   <body class="body">
     <!--header-box-->
     <div class="container">
       <header class="header-box">
-      <a class="logo" href="">Web<span class="logo-text">Studio</span></a>
-      <nav>
+      <div class="logo-web-studio"><a class="logo" href="">Web<span class="logo-text">Studio</span></a></div>
+        
+      <nav class="nav">
         <ul class="site-links-container">
           <li class="links-box"><a class="nav-link-current" href="" >студия</a></li>
           <li class="links-box"><a class="nav-link" href="./portfolio.html" >портфолио</a></li>
           <li class="links-box"><a class="nav-link" href="" >контакты</a></li>
         </ul>
       </nav>
+      
       <ul class="site-links-container">
         <li>
           <a class="filter-mail" href="mailto:info@devstudio.com" 
@@ -49,38 +56,45 @@
       </section>
       </div>
 
-
+<!--<h2>Наши особенности</h2>-->
       <div class="container">
       <section>
-        <!--<h2>Наши особенности</h2>-->
-        <ul>
+        
+        <ul class="box-features">
           <li>
             <h3 class="our-features">внимание к деталям</h3>
+            <div class="box-description">
             <p class="our-features-description">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
-            </p>
+            </p></div>
           </li>
           <li>
             <h3 class="our-features">пунктуальность</h3>
+            <div class="box-description">
             <p class="our-features-description">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
+            </div>
           </li>
           <li>
             <h3 class="our-features">планирование</h3>
+            <div class="box-description">
             <p class="our-features-description">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
+            </div>
           </li>
           <li>
             <h3 class="our-features">современные технологии</h3>
+            <div class="box-description">
             <p class="our-features-description">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
             </p>
+            </div>
           </li>
         </ul>
       </section>
