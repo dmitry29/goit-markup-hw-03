@@ -51,29 +51,34 @@ html {
   color: var(--color-text);
   font-style: normal;
   letter-spacing: 0.03em;
+  margin: 0;
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .header-container {
   display: flex;
   align-items: center;
+  /* margin-left: 94px; */
 }
 
-/*header*/
+/******************header-box*******************/
 
-/*********************логотип*******************/
+
 
 .main-nav {
   display: flex;
   align-items: center;
+  
 }
+
+/*логотип*/ 
 
 .logo {
   display: inline-block;
@@ -86,23 +91,24 @@ html {
   margin-right: 90px;
 }
 
+
+.auth-nav {
+  display: flex;
+  flex-direction:row-reverse; 
+}
+
 .logo-text {
   color: black;
 }
 
-.site-nav,
-.auth-nav {
-  display: flex;
-  padding-left: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+.site-nav {
+  display:flex;
 }
+
 .site-nav .item + .item {
   margin-left: 50px;
 }
-.item {
-  margin: 0;
-}
+
 .auth-nav {
   margin-left: auto;
   color: var(--color-text);
@@ -114,8 +120,8 @@ html {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--color-title);
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .auth-nav .list {
@@ -126,7 +132,7 @@ html {
   margin-left: 50px;
 }
 
-.site-nav .link {
+.site-nav .link  {
   font-weight: 500;
   display: block;
   padding-top: 32px;
@@ -159,7 +165,7 @@ html {
 }
 
 .links-box {
-  display: inline-block;
+  display: inline;
   margin-right: 50px;
   text-align: center;
 }
@@ -224,8 +230,6 @@ html {
 
 .section {
   padding-top: 94px;
-  padding-bottom: 94px;
-  
 }
 
 .text {
@@ -234,17 +238,15 @@ font-size: 14px;
   letter-spacing: 0.01em;
   color: #757575;
 }
+
 .section-list {
   display: flex;
-  padding: 0px;
+  padding-left: 0px; 
+}
+section-item {
+  width: 270px;
 }
 
-.section-item.item:not(:last-child) {
-  width: 270px;
-  margin-right: 20px;
-  
-  
-}
 
 .visually-hidden {
   position: absolute;
@@ -259,9 +261,10 @@ font-size: 14px;
   overflow: hidden;
 }
 
-.section-list .li + .li {
-  margin-left: 30px;
+.section-list:not(:last-child) {
+  display: flex;
   width: 270px;
+  margin-right: 20px;
 }
 
 .section-title {
@@ -273,7 +276,20 @@ font-size: 14px;
   color: var(--color-title);
 }
 
-/*******************our team and specification block**********************/
+/*******************работы команды**********************/
+
+.works-team  {
+  display: flex;
+  padding: 0px;
+  
+}
+
+.img:not(:last-child) {
+  display: block;
+  max-width: 100%;
+  margin-right: 30px;
+
+}
 
 .title {
   font-weight: 700;
@@ -284,17 +300,11 @@ font-size: 14px;
   margin-bottom: 50px;
 }
 
-.section .item {
-  display: flex;
-}
 
-.item .img + .img {
-  margin-left: 30px;
-}
 
-.item:not(:last-child) {
-  margin-right: 30px;
-}
+
+
+
 
 
 /***************** Наша команда ********************/
@@ -312,7 +322,12 @@ font-size: 14px;
   line-height: 1.16;
   text-align: center;
 }
-
+.item-our-team {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding-left: 0px;
+}
 .item {
   display: flex;
   justify-content: center;
@@ -347,24 +362,24 @@ font-size: 14px;
   color: var(--color-title);
 }
 
-/**********************footer block********************/
+/**********************подвал страницы********************/
 
 .footer-bg {
-  margin-top: 0px;
   background-color: var(--background-footer);
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.footer-box {
-  text-align: start;
+.footer-bg,
+.adress,
+.list-footer,
+.list {
+ padding-left: 0;
+margin: 0;
 }
 
-.item-f {
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
-  padding-left: 0px;
+.list:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .adress,
@@ -374,9 +389,13 @@ font-size: 14px;
   color: var(--hero-text-color);
 }
 
+.list-footer .list:hover,
+.list-footer .list:focus {
+  color: var(--color-accent);
+}
+
+
 .list-footer .list {
-  text-align: left;
-  justify-content: start;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -387,20 +406,18 @@ font-size: 14px;
   font-size: 26px;
   line-height: 1.19;
   font-family: "Raleway";
-  padding: 0px;
-  margin-bottom: 20px;
+  
 }
 
-.list-footer .list:hover,
-.list-footer .list:focus {
-  color: var(--color-accent);
-}
+
 
 /**********************портфолио*******************/
 .projects-filter {
   display: flex;
   justify-content: center;
-  padding: 0px;
+  padding-top: 94px;
+  padding-bottom: 30px;
+  padding-left: 0px;
 }
 
 .projects-title {
@@ -423,32 +440,41 @@ font-size: 14px;
 /**********************карточки-портфолио*******************/
 
 .card-set {
-  padding: 0;
-  margin: 0;
-  margin-top: calc(-1 * var(--card-set-gap));
-  margin-left: calc(-1 * var(--card-set-gap));
+  justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0;
+  padding: 0px;
+  margin-bottom: 50px;
 }
 
-
-
-.card-set > .portfolio-item {
-  margin-left: var(--card-set-gap);
+.portfolio-item {
   margin-top: var(--card-set-gap);
+  width: 370px;
 }
 
 .card-thumb {
-  overflow: hidden;
+  overflow: hidden; 
 }
 
+.projects-title {
+  margin-bottom: 4px;
+  font-weight: 700;
+font-size: 18px;
+line-height: 2;
+  letter-spacing: 0.06em;
+}
 .card-content {
-  padding: 0px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
 }
 
 .card-text {
-  margin-top: 10px;
-  text-align: center;
+  margin-top: 10px; 
+  text-align: center; 
 }
