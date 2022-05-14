@@ -22,7 +22,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p 
+{
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -384,8 +385,10 @@ html {
 
 .footer-bg {
   background-color: var(--background-footer);
-  padding-top: 30px;
-  padding-bottom: 30px;
+  /* padding-top: 30px;
+  padding-bottom: 30px; */
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .footer-bg,
@@ -396,7 +399,9 @@ html {
   
 }
 
-
+.list-footer {
+  margin-bottom: 9px;
+}
 
 .adress,
 .logo-text-footer {
@@ -418,10 +423,10 @@ html {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.list-footer .link {
+
+.list-footer .item-link:not(:last-child) {
   margin-bottom: 9px;
 }
-
 
 .log-t {
   display: block;
@@ -430,8 +435,7 @@ html {
   font-size: 26px;
   line-height: 1.19;
   font-family: "Raleway";
-  margin-bottom: 20px;
-  
+  margin-bottom: 20px; 
 }
 
 /**********************портфолио*******************/
