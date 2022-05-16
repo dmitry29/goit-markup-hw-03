@@ -474,6 +474,7 @@ html {
 .card-set {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding-right: 0px;
   padding-left: 0px;
   margin-top: 0px;
